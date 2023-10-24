@@ -1,18 +1,17 @@
 function isPalindrome(str) { 
-	var j = str.length 
-	for(var i=0; i<str.length/2; i++){ 
-		if(str[i]!=str[j]){ 
-			return false; 
-		} 
-		j--; 
+	let name ='';
+	let name1 = '';
+	for(var i=0; i<str.length; i++){ 
+			
+			name +=str[i];
 	} 
-	return true; 
+	for(i=str.length-1;i>=0;i--)
+	{
+		name1 +=str[i];
+	}
+	console.log(name=name1? "yes":"no");
 } 
 
 var str1 = "racecar"; 
 var str2 = "nitin"; 
 var str3 = "Rama"; 
-
-console.log(isPalindrome(str1)); 
-console.log(isPalindrome(str2)); 
-console.log(isPalindrome(str3));
